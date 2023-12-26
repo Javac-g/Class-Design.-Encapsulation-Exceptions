@@ -37,7 +37,35 @@ This Java program simulates a simple checking account management system. It's de
 - Demonstrate understanding of object-oriented programming principles such as encapsulation and exception handling.
 - Implement custom exceptions to handle specific error scenarios.
 - Use try-catch blocks to manage exceptions and provide informative feedback to the user.
+Design a Java class named Circle to represent a circle with customizable properties and the ability to draw itself with various details. The class should allow setting the circle's radius, color, and scale and provide multiple drawing options.
 
+# Task 2 -  Implement a Circle Class:
+
+Attributes:
+radius (private double): Represents the radius of the circle.
+color (private String): Represents the color of the circle.
+scale (private float): Represents the scale factor for the size of the circle.
+Constructor:
+Circle(double radius): Initializes the circle with the given radius and default values for color and scale.
+Create Drawing Methods:
+
+draw(): Draws the circle using its current properties (radius, color, and scale).
+draw(String color): Draws the circle with the specified color, affecting the color attribute.
+draw(float scale): Draws the circle with the specified scale, affecting the scale attribute.
+draw(String color, float scale): Draws the circle with the specified color and scale, affecting both the color and scale attributes.
+Functionality of Drawing Methods:
+
+Each draw method should update the circle's properties accordingly.
+The actual drawing functionality is not implemented (as indicated by the empty method bodies). You can assume these methods would integrate with a graphical library to render the circle on-screen.
+Objectives:
+Demonstrate the use of method overloading by providing multiple draw methods with different parameters.
+Show understanding of basic OOP principles such as encapsulation by using private attributes and public methods.
+Implement a constructor to initialize an object's state and methods to modify it.
+Additional Considerations:
+The methods are stubs (empty implementations), as the actual drawing depends on a graphical context not provided here.
+Think about how you might expand this class to integrate with a real graphical library and what additional methods or properties might be necessary.
+Consider adding getters and setters for the circle's properties to allow for more controlled access and modification.
+Ensure your class structure is clear and provides a logical and intuitive interface for creating and manipulating circle objects with various visual properties.
 ## How to Run
 Provide instructions on how to compile and run the program, including any necessary commands or steps.
 
