@@ -1,4 +1,4 @@
-# Simple Checking Account Management System
+# Task 1 -  Simple Checking Account Management System
 
 ## Overview
 This Java program simulates a simple checking account management system. It's designed to handle basic transactions such as deposits and withdrawals while managing situations like insufficient funds through custom exception handling.
@@ -48,7 +48,7 @@ Detail how the program handles errors, specifically regarding insufficient funds
 Instructions for how others can contribute to this project, if applicable.
 
 ## License
-Include a license here, if applicable.
+This project is licensed under the Apache License 2.0 - see the LICENSE file for details. The Apache License is a permissive free software license written by the Apache Software Foundation (ASF) that provides good protection against software patents and allows users to do almost anything with the project, including commercial use.
 
 ## Contact
 Provide contact information for users who have questions or want to get in touch.
