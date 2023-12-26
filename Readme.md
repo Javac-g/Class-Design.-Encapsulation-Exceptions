@@ -41,31 +41,30 @@ Design a Java class named Circle to represent a circle with customizable propert
 
 # Task 2 -  Implement a Circle Class:
 
-Attributes:
-radius (private double): Represents the radius of the circle.
-color (private String): Represents the color of the circle.
-scale (private float): Represents the scale factor for the size of the circle.
-Constructor:
-Circle(double radius): Initializes the circle with the given radius and default values for color and scale.
-Create Drawing Methods:
+### Attributes
+- **Radius (double):** Determines the size of the circle.
+- **Color (String):** Defines the color of the circle.
+- **Scale (float):** Adjusts the size of the circle relative to its original radius.
 
-draw(): Draws the circle using its current properties (radius, color, and scale).
-draw(String color): Draws the circle with the specified color, affecting the color attribute.
-draw(float scale): Draws the circle with the specified scale, affecting the scale attribute.
-draw(String color, float scale): Draws the circle with the specified color and scale, affecting both the color and scale attributes.
-Functionality of Drawing Methods:
+### Constructor
+- **Circle(double radius):** Initializes a new instance of the Circle class with a specified radius and default values for color and scale.
 
-Each draw method should update the circle's properties accordingly.
-The actual drawing functionality is not implemented (as indicated by the empty method bodies). You can assume these methods would integrate with a graphical library to render the circle on-screen.
-Objectives:
-Demonstrate the use of method overloading by providing multiple draw methods with different parameters.
-Show understanding of basic OOP principles such as encapsulation by using private attributes and public methods.
-Implement a constructor to initialize an object's state and methods to modify it.
-Additional Considerations:
-The methods are stubs (empty implementations), as the actual drawing depends on a graphical context not provided here.
-Think about how you might expand this class to integrate with a real graphical library and what additional methods or properties might be necessary.
-Consider adding getters and setters for the circle's properties to allow for more controlled access and modification.
-Ensure your class structure is clear and provides a logical and intuitive interface for creating and manipulating circle objects with various visual properties.
+### Drawing Methods
+- **draw():** Renders the circle using its current properties.
+- **draw(String color):** Draws the circle with a specified color, updating the color attribute.
+- **draw(float scale):** Draws the circle with a specified scale, updating the scale attribute.
+- **draw(String color, float scale):** Draws the circle with both specified color and scale, updating the respective attributes.
+
+## Objectives
+- **Method Overloading:** Demonstrates the use of method overloading by providing multiple drawing methods with different parameters.
+- **Encapsulation:** Shows an understanding of basic OOP principles by using private attributes and public methods.
+- **Initialization:** Implements a constructor to initialize the circle's state and methods to modify it.
+
+## Additional Considerations
+- **Stub Methods:** The draw methods are currently stubs, as the actual drawing implementation would require a graphical context. Consider how this class might integrate with a real graphical library like JavaFX or Swing.
+- **Expansion:** Think about additional methods or properties that might be useful, such as getters and setters for the circle's properties, or methods to calculate area and circumference.
+- **Error Handling:** Consider adding error handling for invalid parameters (e.g., negative radius or scale).
+
 ## How to Run
 Provide instructions on how to compile and run the program, including any necessary commands or steps.
 
