@@ -64,6 +64,39 @@ Design a Java class named Circle to represent a circle with customizable propert
 - **Stub Methods:** The draw methods are currently stubs, as the actual drawing implementation would require a graphical context. Consider how this class might integrate with a real graphical library like JavaFX or Swing.
 - **Expansion:** Think about additional methods or properties that might be useful, such as getters and setters for the circle's properties, or methods to calculate area and circumference.
 - **Error Handling:** Consider adding error handling for invalid parameters (e.g., negative radius or scale).
+The Operation class is a utility class in Java that provides methods to calculate the area of a rectangle. It's designed to handle invalid inputs robustly by using exceptions and alternative error-handling strategies.
+
+# Task 3 -  Java Operation Class for Rectangle Area Calculation:
+
+### Methods
+- **squareRectangle(int a, int b):** Calculates the area of a rectangle with sides 'a' and 'b'.
+- **trySquareRectangle(int a, int b):** Attempts to calculate the area of a rectangle, providing alternative error handling.
+
+### Error Handling
+- **IllegalArgumentException:** Thrown by `squareRectangle` when either dimension is non-positive.
+- **Alternative Approach:** `trySquareRectangle` uses a try-catch block to manage exceptions, returning a special value (-1) to indicate an error.
+
+## Implementation
+
+### squareRectangle Method
+- **Signature:** `public static int squareRectangle(int a, int b)`
+- **Behavior:** Calculates and returns the area if valid inputs are provided.
+- **Error Handling:** Throws an IllegalArgumentException if `a` or `b` is less than or equal to 0, with a message indicating the requirement for positive dimensions.
+
+### trySquareRectangle Method
+- **Signature:** `public static int trySquareRectangle(int a, int b)`
+- **Behavior:** Tries to calculate the area of a rectangle, handling any IllegalArgumentException internally.
+- **Error Handling:** Catches IllegalArgumentException and returns -1, signaling an error without propagating the exception.
+
+## Objectives
+- **Robust Input Validation:** Utilize exception handling to manage and communicate errors effectively.
+- **Static Utility Methods:** Provide operations without the need for class instantiation, suitable for utility-type tasks.
+- **Alternative Error Handling:** Offer different strategies for dealing with errors to accommodate various use cases.
+
+## Additional Considerations
+- **Documentation:** Clearly document the purpose, parameters, return values, and error behavior for each method.
+- **Usability:** Consider the context in which these methods might be used and how the different error handling strategies might affect their usability.
+- **Testing:** Ensure thorough testing of both methods with various inputs, including boundary cases, to validate their functionality and error handling.
 
 ## How to Run
 Provide instructions on how to compile and run the program, including any necessary commands or steps.
