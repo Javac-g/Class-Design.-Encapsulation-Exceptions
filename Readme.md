@@ -120,13 +120,23 @@ The Operation class is a utility class in Java that provides methods to calculat
   - Handles `ColorException` and `TypeException` by setting default values and retrying.
   - Returns the created `Plant` object.
 
+# Task 5 - Java Point Class for 2D Space Representation
+
+## Overview
+The Point class in Java is designed to represent a point in 2D space and provide functionalities to calculate distances between points. It offers methods to retrieve the point's coordinates and calculate the distance from this point to another point or the origin.
+
+### Attributes
+- **x (int):** Represents the x-coordinate of the point.
+- **y (int):** Represents the y-coordinate of the point.
+
+### Constructor
+- **Point(int x, int y):** Initializes a new instance of the Point class with specified x and y coordinates.
+
+### Methods
+- **getXYPair():** Returns an array containing the x and y coordinates of the point.
+- **distance(int x, int y):** Calculates the Euclidean distance between this point and another point with specified x and y coordinates.
+- **distance(Point point):** Calculates the Euclidean distance between this point and another specified Point object.
+- **distance():** Calculates the distance from this point to the origin (0,0).
 
 ## License
 This project is licensed under the Apache License 2.0 - see the LICENSE file for details. The Apache License is a permissive free software license written by the Apache Software Foundation (ASF) that provides good protection against software patents and allows users to do almost anything with the project, including commercial use.
-
-## Contact
-Provide contact information for users who have questions or want to get in touch.
-
----
-
-**Note:** This README is a template and should be modified to fit the specifics of your project's implementation and requirements.
