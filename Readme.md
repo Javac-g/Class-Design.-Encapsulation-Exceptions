@@ -93,19 +93,33 @@ The Operation class is a utility class in Java that provides methods to calculat
 - **Static Utility Methods:** Provide operations without the need for class instantiation, suitable for utility-type tasks.
 - **Alternative Error Handling:** Offer different strategies for dealing with errors to accommodate various use cases.
 
-## Additional Considerations
-- **Documentation:** Clearly document the purpose, parameters, return values, and error behavior for each method.
-- **Usability:** Consider the context in which these methods might be used and how the different error handling strategies might affect their usability.
-- **Testing:** Ensure thorough testing of both methods with various inputs, including boundary cases, to validate their functionality and error handling.
+# Task 4 -  Gardening System - Plant Object Management
 
-## How to Run
-Provide instructions on how to compile and run the program, including any necessary commands or steps.
+### Enumerations
+- **Color:** Defines possible colors (`WHITE`, `RED`, `BLUE`) for plants.
+- **Type:** Defines possible types (`RARE`, `ORDINARY`) for plants.
 
-## Error Handling
-Detail how the program handles errors, specifically regarding insufficient funds.
+### Custom Exception Classes
+- **ColorException:** Indicates issues with setting the plant's color.
+- **TypeException:** Indicates issues with setting the plant's type.
 
-## Contribution
-Instructions for how others can contribute to this project, if applicable.
+### Plant Class
+- **Attributes:**
+  - `name (String)`: The name of the plant.
+  - `color (Color)`: The color of the plant.
+  - `type (Type)`: The type of the plant.
+- **Constructor:**
+  - `Plant(String type, String color, String name)`: Sets the plant's type and color; throws `TypeException` or `ColorException` for invalid inputs.
+- **Methods:**
+  - `getType()`, `getColor()`, `getName()`: Getters for the plant's attributes.
+  - `toString()`: Provides a string representation of the plant.
+
+### Error Handling and Creation Logic
+- **tryCreatePlant(String type, String color, String name):**
+  - Attempts to create a new `Plant` instance.
+  - Handles `ColorException` and `TypeException` by setting default values and retrying.
+  - Returns the created `Plant` object.
+
 
 ## License
 This project is licensed under the Apache License 2.0 - see the LICENSE file for details. The Apache License is a permissive free software license written by the Apache Software Foundation (ASF) that provides good protection against software patents and allows users to do almost anything with the project, including commercial use.
