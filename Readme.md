@@ -137,6 +137,31 @@ The Point class in Java is designed to represent a point in 2D space and provide
 - **distance(int x, int y):** Calculates the Euclidean distance between this point and another point with specified x and y coordinates.
 - **distance(Point point):** Calculates the Euclidean distance between this point and another specified Point object.
 - **distance():** Calculates the distance from this point to the origin (0,0).
+# Task 6 -  Java Product Class for Store Inventory Management
+
+## Overview
+The Product class in Java represents items in a store's inventory. Each product has a name and price, and the class keeps track of the total number of product instances created. This class is designed to be used in applications that manage store inventories, product listings, or any system requiring an item representation with a count of total items.
+
+## Features
+
+### Attributes
+- **name (private String):** The name of the product.
+- **price (private double):** The price of the product.
+- **counter (public static int):** A class-level counter tracking the total number of Product instances created.
+
+### Constructors
+- **Default Constructor:** Initializes a new instance of Product and increments the counter.
+- **Parameterized Constructor (String name, double price):** Initializes a new instance with the specified name and price and increments the counter.
+
+### Methods
+- **Setters:**
+  - `setName(String name)`: Sets the product's name.
+  - `setPrice(double price)`: Sets the product's price.
+- **Getters:**
+  - `getName()`: Returns the product's name.
+  - `getPrice()`: Returns the product's price.
+- **Static Method:**
+  - `count()`: Returns the total number of Product instances created.
 
 ## License
 This project is licensed under the Apache License 2.0 - see the LICENSE file for details. The Apache License is a permissive free software license written by the Apache Software Foundation (ASF) that provides good protection against software patents and allows users to do almost anything with the project, including commercial use.
